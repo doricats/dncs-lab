@@ -1,8 +1,8 @@
-FirstName: {{ FirstName }}
-LastName: {{ LastName }}
-MatriculationNumber: {{ MatriculationNumber }}
-AcademicYear: 2019-2020
-GitHubUrl: YourGithubRepositoryURL
+FirstName: {{  }}
+LastName: {{ }}
+MatriculationNumber: {{  }}
+AcademicYear: 
+GitHubUrl: 
 Subnets:
   HostsA:
     RequiredAddresses: {{ HostsASubnetRequiredAddresses }}

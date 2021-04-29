@@ -2,7 +2,7 @@
 
 This repository contains the Vagrant files required to run the virtual lab environment used in the DNCS course.
 ```
-
+#My Topology
 
         +-----------------------------------------------------+
         |                                                     |
@@ -90,8 +90,8 @@ The assignment deliverable consists of a Github repository containing:
 - an updated answers.yml file containing the details of your project
 
 ## Design Requirements
-- Hosts 1-a and 1-b are in two subnets (*Hosts-A* and *Hosts-B*) that must be able to scale up to respectively {{ HostsASubnetRequiredAddresses }} and {{ HostsBSubnetRequiredAddresses }} usable addresses
-- Host 2-c is in a subnet (*Hub*) that needs to accommodate up to {{ HubSubnetRequiredAddresses }} usable addresses
+- Hosts 1-a and 1-b are in two subnets (*Hosts-A* and *Hosts-B*) that must be able to scale up to respectively 44 and 317 usable addresses
+- Host 2-c is in a subnet (*Hub*) that needs to accommodate up to 480 usable addresses
 - Host 2-c must run a docker image (dustnic82/nginx-test) which implements a web-server that must be reachable from Host-1-a and Host-1-b
 - No dynamic routing can be used
 - Routes must be as generic as possible
@@ -117,4 +117,49 @@ The assignment deliverable consists of a Github repository containing:
 
 
 # Design
-[ Your work goes here ]
+
+## Address Informations ##
+
+| Device | Network | Subnet | Broadcast | Hosts | Host-min | Host-max |
+|--------|---------|--------|-----------|-------|:--------:|:--------:|
+|        |         |        |           |       |          |          |
+|        |         |        |           |       |          |          |
+|        |         |        |           |       |          |          |
+
+"Hosts-A" must be able to scale up to 44 usable addresses__
+"Hosts-B" must be able to scale up to 317 usable addresses__
+"Router" must be able to scale up to 480 usable addresses__
+
+## Routing Tables ##
+
+### Host-a ###
+| Destination | Gateway | Genmask | Interface |
+|-------------|---------|---------|-----------|
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
+### Host-b ###
+| Destination | Gateway | Genmask | Interface |
+|-------------|---------|---------|-----------|
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
+### Host-c ###
+| Destination | Gateway | Genmask | Interface |
+|-------------|---------|---------|-----------|
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
+### Router-1 ###
+| Destination | Gateway | Genmask | Interface |
+|-------------|---------|---------|-----------|
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
+### Router-2 ###
+| Destination | Gateway | Genmask | Interface |
+|-------------|---------|---------|-----------|
+|             |         |         |           |
+|             |         |         |           |
+|             |         |         |           |
